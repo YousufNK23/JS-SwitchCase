@@ -10,20 +10,31 @@
 
 <body>
     <script>
-        var Numbers = ("Numerics");
         var Num1 = parseInt(prompt("Enter Your Value"));
+        var Sign = prompt ("Enter Sign");
         var Num2 = parseInt(prompt("Enter Your Value"));
-        if (Numbers = 0<= 999)
-        {
-        switch (Numbers) {
-            case Numbers:
-                document.write(Num1 + Num2 +"&nbsp;<b>(Addition)</b> <br>")
-                document.write(Num1 - Num2 +"&nbsp;<b>(Subtract)</b> <br>")
-                document.write("<b>Multiply:</b> &nbsp;"+ Num1 * Num2 +"<br>")
-                document.write("<b>Divide:</b> &nbsp;"+ Num1 / Num2 +"<br>")
-                document.write("<b>Square:</b> &nbsp;"+ Num1 ** Num2 +"<br>")
+        switch (Sign) {
+            case "+": {
+                document.write(Num1 +                        Num2)
 
                 break;
+                }
+            case "-": {
+                document.write(Num1 -     Num2)
+                break;
+                }
+            case "*": {
+                document.write(Num1 *     Num2)
+                break;
+                }
+            case "/": {
+                document.write(Num1 /     Num2)
+                break;
+                }
+           case "**": {
+                document.write(Num1 **     Num2)
+                break;
+                }
             default:
                 document.write("Incorrect Value!")
                 break;
